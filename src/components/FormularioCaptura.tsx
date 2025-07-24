@@ -18,19 +18,34 @@ const FormularioCaptura = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://hook.us2.make.com/8zrpuakugl8b1fsw76oadna61hjqbe3w', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
       toast({
         title: "Dados enviados com sucesso!",
         description: "Em breve nossa equipe entrará em contato com você."
       });
+      
       setFormData({
         nome: "",
         email: "",
         telefone: ""
       });
+    } catch (error) {
+      toast({
+        title: "Erro ao enviar dados",
+        description: "Tente novamente em alguns instantes.",
+        variant: "destructive"
+      });
+    } finally {
       setIsLoading(false);
-    }, 1000);
+    }
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
