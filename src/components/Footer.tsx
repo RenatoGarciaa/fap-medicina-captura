@@ -1,8 +1,6 @@
 import { Instagram, Facebook, Youtube, MapPin } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-white py-16">
+  return <footer className="bg-primary text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Logo and Description */}
@@ -29,15 +27,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">Contato</h4>
             <div className="space-y-3 text-gray-300">
-              <p className="flex items-start">
-                <MapPin className="w-5 h-5 mr-2 mt-1 text-accent flex-shrink-0" />
-                Rua Prof. Alonso Barbosa, 65<br />
-                Centro - Araripina/PE<br />
-                CEP: 56280-000
-              </p>
-              <p>📞 (87) 3873-1234</p>
-              <p>📱 (87) 99999-9999</p>
-              <p>✉️ contato@faparaipina.edu.br</p>
+              
+              <p>📞 (87) 3873-8800 - Ramal 315</p>
+              <p>📱 (87) 9 9210-1299</p>
+              <p>✉️ secretaria.araripina@fapce.edu.br</p>
             </div>
           </div>
 
@@ -81,8 +74,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
