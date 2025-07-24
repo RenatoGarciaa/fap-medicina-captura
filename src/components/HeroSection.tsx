@@ -88,24 +88,22 @@ const HeroSection = () => {
               🌐medicina2.fapce.edu.br
             </div>
           </div>
-
-          {/* Right side - Estudante oficial */}
-          <div className="hidden lg:flex items-end justify-end">
-            <div className="relative">
-              <img
-                src="/lovable-uploads/a80bc1e5-08f7-4b3c-8c6d-f7f23469f8ca.png"
-                alt="Estudante de Medicina FAP"
-                className="max-h-[90vh] object-bottom drop-shadow-2xl"
-                style={{ marginBottom: "-4px" }}
-              />
-              {/* Efeito de glow atrás da imagem */}
-              <div className="absolute inset-0 bg-accent/20 blur-3xl -z-10 scale-110"></div>
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Decorative elements - versão mobile da estudante */}
+      {/* Estudante fixada na parte inferior direita (desktop) */}
+      <div className="hidden lg:block absolute bottom-0 right-0 z-10">
+        <div className="relative">
+          <img
+            src="/lovable-uploads/a80bc1e5-08f7-4b3c-8c6d-f7f23469f8ca.png"
+            alt="Estudante de Medicina FAP"
+            className="h-[95vh] object-bottom drop-shadow-2xl"
+          />
+          <div className="absolute inset-0 bg-accent/20 blur-3xl -z-10 scale-110"></div>
+        </div>
+      </div>
+
+      {/* Versão mobile da estudante (decorativo) */}
       <div className="lg:hidden absolute bottom-4 right-4 opacity-30">
         <img
           src="/lovable-uploads/a80bc1e5-08f7-4b3c-8c6d-f7f23469f8ca.png"
