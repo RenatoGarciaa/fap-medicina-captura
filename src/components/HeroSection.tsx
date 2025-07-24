@@ -104,11 +104,11 @@ const HeroSection = () => {
       </div>
 
       {/* Versão mobile da estudante (decorativo) */}
-      <div className="lg:hidden absolute bottom-4 right-4 opacity-30">
-        <img
-          src="/lovable-uploads/a80bc1e5-08f7-4b3c-8c6d-f7f23469f8ca.png"
-          alt="Estudante de Medicina FAP"
-          className="h-32 w-auto"
+      <div className="lg:hidden absolute bottom-0 right-0 opacity-50 p-2">
+  <img
+    src="/lovable-uploads/a80bc1e5-08f7-4b3c-8c6d-f7f23469f8ca.png"
+    alt="Estudante de Medicina FAP"
+    className="h-24 w-auto object-bottom"
         />
       </div>
     </section>
