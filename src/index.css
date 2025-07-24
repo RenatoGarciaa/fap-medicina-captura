@@ -9,32 +9,42 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 0%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* FAP Araripina Brand Colors */
+    --primary: 208 100% 13%; /* #041e42 - Azul Escuro */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 100% 33%; /* #0054a6 - Azul Royal */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 194 100% 50%; /* #00e0ff - Ciano */
+    --accent-foreground: 0 0% 0%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 208 100% 13%;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(208 100% 13%), hsl(210 100% 33%));
+    --gradient-ciano: linear-gradient(135deg, hsl(194 100% 50%), hsl(200 100% 55%));
+    --gradient-hero: linear-gradient(135deg, hsla(208 100% 13% / 0.9), hsla(210 100% 33% / 0.8));
+    
+    /* Custom shadows */
+    --shadow-elegant: 0 20px 40px -10px hsla(208 100% 13% / 0.3);
+    --shadow-glow: 0 0 30px hsla(194 100% 50% / 0.4);
 
     --radius: 0.5rem;
 
