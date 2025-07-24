@@ -68,6 +68,9 @@ const HeroSection = () => {
     <div className="absolute inset-0 bg-accent/20 blur-3xl -z-10 scale-110"></div>
   </div>
 </div>
+          </div>
+        </div>
+      </div>
       
       {/* Decorative elements - versão mobile da estudante */}
       <div className="lg:hidden absolute bottom-4 right-4 opacity-30">
