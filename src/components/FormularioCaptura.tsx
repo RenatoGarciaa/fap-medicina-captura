@@ -61,7 +61,7 @@ const FormularioCaptura = () => {
               <CardTitle className="text-3xl font-bold text-primary mb-4">
                 Inscreva-se e receba informações exclusivas
               </CardTitle>
-              <p className="text-muted-foreground text-lg">Chegou a hora de transformar seus sonhos em realidade com quem é referencia na educação. Vem ser FAP!</p>
+              <p className="text-muted-foreground text-lg">Chegou a hora de transformar seus sonhos em realidade com quem é referência na educação. Vem ser FAP!</p>
             </CardHeader>
             
             <CardContent>
