@@ -103,12 +103,12 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Versão intermediária (exibe só acima de mobile) */}
-      <div className="hidden md:block lg:hidden absolute bottom-4 right-4 opacity-30">
+      {/* Versão intermediária (exibe só acima de mobile e antes do desktop) */}
+      <div className="hidden md:block lg:hidden absolute bottom-0 right-0 z-10">
         <img
           src="/lovable-uploads/a80bc1e5-08f7-4b3c-8c6d-f7f23469f8ca.png"
           alt="Estudante de Medicina FAP"
-          className="h-48 md:h-56 lg:h-64 w-auto"
+          className="h-56 md:h-64 ipad-portrait:h-[80vh] w-auto object-contain drop-shadow-2xl"
         />
       </div>
     </section>
