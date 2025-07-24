@@ -2,37 +2,33 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   const handleCTAClick = () => {
-    document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary">
+      {/* Background com sobreposição */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/lovable-uploads/7465d9fe-905d-45b3-98ad-df9b8a773d66.png')`,
-        }}
+        style={{ backgroundImage: `url('/lovable-uploads/7465d9fe-905d-45b3-98ad-df9b8a773d66.png')` }}
       >
-        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="absolute inset-0 bg-primary/70" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-center min-h-screen">
+      {/* Conteúdo */}
+      <div className="relative z-10 container mx-auto px-6">
+        <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-8 items-end">
           
-          {/* Text Section */}
-          <div className="text-left text-white space-y-6">
+          {/* Texto */}
+          <div className="text-white space-y-6 pb-10 lg:pb-20">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                FAÇA <span className="text-accent">MEDICINA</span>
-              </h1>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                FAÇA <span className="text-accent">MEDICINA</span><br />
                 NA FAP ARARIPINA
               </h1>
             </div>
 
-            {/* Selo Nota 5 */}
+            {/* Nota máxima MEC */}
             <div className="flex items-center space-x-4 bg-white/10 backdrop-blur rounded-2xl p-4 w-fit">
               <img
                 src="/lovable-uploads/8cc26806-08d4-406d-9501-f6e602d71d69.png"
@@ -45,7 +41,7 @@ const HeroSection = () => {
               </div>
               <img
                 src="/lovable-uploads/07d1a877-d5b7-4ef3-b184-ae488822dadd.png"
-                alt="5 estrelas"
+                alt="Estrelas"
                 className="h-6 w-auto"
               />
             </div>
@@ -55,7 +51,7 @@ const HeroSection = () => {
               <span className="text-accent font-semibold">VENHA SER MED FAP.</span>
             </p>
 
-            <div className="pt-4">
+            <div className="pt-2">
               <Button
                 variant="gradient"
                 size="lg"
@@ -66,20 +62,19 @@ const HeroSection = () => {
               </Button>
             </div>
 
-            <div className="text-sm text-gray-200 bg-black/20 rounded-lg p-3 w-fit">
+            <div className="text-sm text-gray-200 bg-black/20 rounded-lg p-3 w-fit mt-4">
               🌐 medicina2.fapce.edu.br
             </div>
           </div>
 
-          {/* Imagem da Estudante */}
-          <div className="flex justify-center items-end lg:items-center">
-            <div className="relative w-full max-w-sm md:max-w-md">
+          {/* Imagem da estudante */}
+          <div className="flex items-end justify-center w-full">
+            <div className="relative w-full max-w-sm">
               <img
                 src="/lovable-uploads/a80bc1e5-08f7-4b3c-8c6d-f7f23469f8ca.png"
                 alt="Estudante de Medicina FAP"
                 className="w-full h-auto object-contain drop-shadow-2xl"
               />
-              <div className="absolute inset-0 bg-accent/20 blur-3xl -z-10 scale-110 rounded-full"></div>
             </div>
           </div>
         </div>
