@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-medicina.jpg";
+const heroImage = "/lovable-uploads/1561a853-3cad-45e1-a8d0-a0b76d87239d.png";
 
 const HeroSection = () => {
   const handleCTAClick = () => {
@@ -8,41 +8,54 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-hero"></div>
+        <div className="absolute inset-0 bg-primary/20"></div>
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="max-w-4xl mx-auto">
-          {/* Main Title with Gradient */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            FAÇA{" "}
-            <span className="bg-gradient-ciano bg-clip-text text-transparent">
-              MEDICINA
-            </span>{" "}
-            NA FAP ARARIPINA
-          </h1>
+      <div className="relative z-10 container mx-auto px-4">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 items-center min-h-screen">
+          {/* Text Content - Left side */}
+          <div className="text-left text-white lg:pr-8">
+            {/* Main Title with Gradient */}
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              FAÇA{" "}
+              <span className="bg-gradient-ciano bg-clip-text text-transparent">
+                MEDICINA
+              </span>{" "}
+              NA FAP ARARIPINA
+            </h1>
+            
+            {/* Subtitle */}
+            <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-100 leading-relaxed">
+              Vestibular 2025 com{" "}
+              <span className="text-accent font-bold">nota máxima no MEC!</span>
+              <br />
+              Uma formação que transforma vidas no coração do Sertão.
+            </p>
+            
+            {/* CTA Button */}
+            <Button 
+              variant="gradient" 
+              size="lg" 
+              className="text-lg px-8 py-4 font-semibold"
+              onClick={handleCTAClick}
+            >
+              Garanta sua vaga agora
+            </Button>
+            
+            {/* Info adicional */}
+            <div className="mt-6 text-sm text-gray-200">
+              📅 Prova: 13/07 • 🌐 medicina2.fapge.edu.br
+            </div>
+          </div>
           
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
-            Vestibular 2025 com nota máxima no MEC!<br />
-            Uma formação que transforma vidas no coração do Sertão.
-          </p>
-          
-          {/* CTA Button */}
-          <Button 
-            variant="gradient" 
-            size="lg" 
-            className="text-lg px-8 py-4 font-semibold"
-            onClick={handleCTAClick}
-          >
-            Garanta sua vaga agora
-          </Button>
+          {/* Right side - deixa espaço para a imagem da estudante */}
+          <div className="hidden lg:block"></div>
         </div>
       </div>
       
