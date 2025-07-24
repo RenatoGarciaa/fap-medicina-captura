@@ -4,7 +4,20 @@ import { Star, Building2, Users, Heart, GraduationCap } from "lucide-react";
 const SobreCurso = () => {
   const benefits = [
     {
-      icon: <Star className="w-8 h-8 text-accent" />,
+      icon: (
+        <div className="flex items-center">
+          <img 
+            src="/lovable-uploads/8cc26806-08d4-406d-9501-f6e602d71d69.png" 
+            alt="5" 
+            className="h-8 w-auto mr-2"
+          />
+          <img 
+            src="/lovable-uploads/07d1a877-d5b7-4ef3-b184-ae488822dadd.png" 
+            alt="5 estrelas" 
+            className="h-6 w-auto"
+          />
+        </div>
+      ),
       title: "Nota 5 no MEC",
       description: "Reconhecimento máximo pelo Ministério da Educação, garantindo qualidade e excelência no ensino."
     },
